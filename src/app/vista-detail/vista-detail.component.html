@@ -1,0 +1,11 @@
+<div *ngIf="vista">
+
+        <h2>{{ vista.name | uppercase }}</h2>
+        <div><span>rank: </span>{{ vista.rank }}</div>
+        <div>
+          <label>name:
+            <input [(ngModel)]="vista.name" placeholder="name"/>
+          </label>
+        </div>
+      
+      </div>

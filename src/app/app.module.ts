@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { VistasComponent } from './vistas/vistas.component';
 import { FormsModule } from '@angular/forms';
+import { VistaDetailComponent } from './vista-detail/vista-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    VistasComponent
+    VistasComponent,
+    VistaDetailComponent
   ],
   imports: [
     BrowserModule,
