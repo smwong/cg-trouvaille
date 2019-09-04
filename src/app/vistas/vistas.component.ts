@@ -1,6 +1,7 @@
-import { VISTAS } from './../vistas-list';
+import { VistaService } from './../vista.service';
 import { Component, OnInit } from '@angular/core';
 import { Vista } from '../vista';
+
 
 @Component({
   selector: 'app-vistas',
@@ -9,12 +10,17 @@ import { Vista } from '../vista';
 })
 export class VistasComponent implements OnInit {
 
-  vistas = VISTAS;
+  vistas: Vista[];
   selectedVista: Vista;
 
-  constructor() { }
+  constructor(private vistaService: VistaService) { }
+
+  getVistas(): void {
+    this.vistas = this.vistaService.getVistas();
+  }
 
   ngOnInit() {
+    this.getVistas();
   }
 
   onSelect(vista: Vista): void {
