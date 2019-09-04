@@ -1,0 +1,20 @@
+<h2>Locations</h2>
+<ul class="vistas">
+  <li *ngFor="let vista of vistas"
+    [class.selected]="vista === selectedVista"
+    (click)="onSelect(vista)">
+    <span class="badge">{{ vista.rank }}</span> {{ vista.name }}
+  </li>
+</ul>
+
+<div *ngIf="selectedVista">
+
+  <h2>{{ selectedVista.name | uppercase }}</h2>
+  <div><span>rank: </span>{{ selectedVista.rank }}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedVista.name" placeholder="name"/>
+    </label>
+  </div>
+
+</div>
