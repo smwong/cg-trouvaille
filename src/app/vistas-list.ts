@@ -2,7 +2,7 @@ import { Vista } from './vista';
 
 export const VISTAS: Vista[] = [
     { rank: 1, name: 'Missouri Botanical Garden'},
-    { rank: 2, name: 'CityGarden'},
+    { rank: 2, name: 'Citygarden'},
     { rank: 3, name: 'Art Hill in Forest Park'},
     { rank: 4, name: 'Laumeier Sculpture Park'},
     { rank: 5, name: 'Cathedral Basilica of St. Louis'},

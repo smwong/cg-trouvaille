@@ -5,17 +5,21 @@ import { AppComponent } from './app.component';
 import { VistasComponent } from './vistas/vistas.component';
 import { FormsModule } from '@angular/forms';
 import { VistaDetailComponent } from './vista-detail/vista-detail.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     VistasComponent,
-    VistaDetailComponent
+    VistaDetailComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

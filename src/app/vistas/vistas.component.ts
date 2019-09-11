@@ -16,7 +16,8 @@ export class VistasComponent implements OnInit {
   constructor(private vistaService: VistaService) { }
 
   getVistas(): void {
-    this.vistas = this.vistaService.getVistas();
+    this.vistaService.getVistas()
+    .subscribe(vistas => this.vistas = vistas);
   }
 
   ngOnInit() {
