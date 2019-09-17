@@ -1,10 +1,10 @@
 h1 {
-    color: #369;
+    color: #323846;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 250%;
   }
   h2, h3 {
-    color: #444;
+    color: #323846;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
   }
@@ -12,7 +12,7 @@ h1 {
     margin: 2em;
   }
   body, input[type="text"], button {
-    color: #333;
+    color: #323846;
     font-family: Cambria, Georgia;
   }
   /* everywhere else */

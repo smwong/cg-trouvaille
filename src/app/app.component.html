@@ -1,7 +1,18 @@
 <h1>{{ title }}</h1>
+
+<nav>
+    <a routerLink="">Home</a>
+  </nav>
 <nav>
     <a routerLink="/vistas">Locations</a>
   </nav>
-<router-outlet></router-outlet>
+  <!--These routing links aren't done yet so they just lead to /vistas for now-->
+  <nav>
+    <a routerLink="/vistas">Photo Tips</a>
+  </nav>
+  <nav>
+    <a routerLink="/vistas">About</a>
+  </nav>
+<!--end placeholder router links-->
 
-<!-- <app-vistas></app-vistas> -->
+<router-outlet></router-outlet>
