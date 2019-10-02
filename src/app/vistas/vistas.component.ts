@@ -9,23 +9,17 @@ import { Vista } from '../vista';
   styleUrls: ['./vistas.component.css']
 })
 export class VistasComponent implements OnInit {
-
   vistas: Vista[];
-  selectedVista: Vista;
 
   constructor(private vistaService: VistaService) { }
-
-  getVistas(): void {
-    this.vistaService.getVistas()
-    .subscribe(vistas => this.vistas = vistas);
-  }
 
   ngOnInit() {
     this.getVistas();
   }
 
-  onSelect(vista: Vista): void {
-    this.selectedVista = vista;
+  getVistas(): void {
+    this.vistaService.getVistas()
+    .subscribe(vistas => this.vistas = vistas);
   }
 
 }

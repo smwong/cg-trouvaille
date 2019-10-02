@@ -1,10 +1,8 @@
-<!-- <h2>Locations</h2> -->
+
 <ul class="vistas">
-  <li *ngFor="let vista of vistas"
-    [class.selected]="vista === selectedVista"
-    (click)="onSelect(vista)">
+  <li *ngFor="let vista of vistas">
+    <a routerLink="/detail/{{hero.id}}">
     <span class="badge">{{ vista.rank }}</span> {{ vista.name }}
+  </a>
   </li>
 </ul>
-
-<app-vista-detail [vista]="selectedVista"></app-vista-detail>

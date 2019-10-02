@@ -12,5 +12,9 @@ export class VistaService {
     return of (VISTAS);
   }
 
+  getVista(rank: number): Observable<Vista> {
+    return of(VISTAS.find(vista => vista.rank === rank));
+  }
+
   constructor() { }
 }
