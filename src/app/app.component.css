@@ -19,3 +19,25 @@ h1 {
   * {
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  .center {
+    margin: auto;
+    width: 38%;
+    padding: 10px;
+  }
+
+  .menuButton {
+    padding: 8px;
+    text-align: center;
+    color: #212922;
+    max-height: 120px;
+    min-width: 120px;
+    background-color: #ffcc00;
+    border-radius: 2px;
+  }
+
+  .menuButton:hover {
+    background-color: #d8e1e9;
+    cursor: pointer;
+    color: #46b1c9;
+  }

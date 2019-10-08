@@ -19,7 +19,7 @@ export class DashboardComponent implements OnInit {
 
   getVistas(): void {
     this.vistaService.getVistas()
-      .subscribe(vistas => this.vistas = vistas.slice(1,5));
+      .subscribe(vistas => this.vistas = vistas.slice(0,12));
   }
 
 }
