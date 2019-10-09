@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { LikesComponent } from './likes/likes.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     VistasComponent,
     VistaDetailComponent,
-    DashboardComponent
+    DashboardComponent,
+    LikesComponent
   ],
   imports: [
     BrowserModule,

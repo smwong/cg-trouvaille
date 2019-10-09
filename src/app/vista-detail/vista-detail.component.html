@@ -1,12 +1,20 @@
 <div *ngIf="vista">
 
         <h2>{{ vista.name | uppercase }}</h2>
+
+        <!-- <like
+          [likesCount]="heart.likesCount"
+          [isActive]="heart.isLiked"
+        ></like> -->
+
         <div><span>rank: </span>{{vista.rank}}</div>
         <div>
           <label>name:
             <input [(ngModel)]="vista.name" placeholder="name"/>
           </label>
         </div>
+        <div><span>address: </span>{{vista.address}}</div>
+        <br>
         <button (click)="goBack()">Back</button>
       
       </div>
