@@ -1,8 +1,9 @@
 
 <ul class="vistas">
   <li *ngFor="let vista of vistas">
-    <a routerLink="/detail/{{hero.id}}">
+    <a routerLink="/detail/{{vista.rank}}">
     <span class="badge">{{ vista.rank }}</span> {{ vista.name }}
   </a>
   </li>
+
 </ul>

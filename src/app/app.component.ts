@@ -8,9 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'TROUVAILLE';
 
-  tweet = {
-    body: '...',
-    likesCount: 0,
-    isLiked: true
-  }
+
 }

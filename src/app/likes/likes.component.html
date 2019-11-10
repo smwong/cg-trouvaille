@@ -1,9 +1,5 @@
-
-<span 
-    class="glyphicon glyphicon-heart"
-    [class.highlighted]="isActive"
-    (click)="onClick">
-
-</span>
-
-<span>{{ LikesCount }}</span>
+<div>
+    <p>{{numberOfLikes}}</p>
+    <button class="btn btn-success" (click)="likeButtonClick()">Like</button> 
+    <button class="btn btn-danger" (click)="dislikeButtonClick()">Dislike</button>
+</div>

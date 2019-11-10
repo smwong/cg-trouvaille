@@ -1,16 +1,19 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-likes',
+  selector: 'likes-box',
   templateUrl: './likes.component.html',
-  styleUrls: ['./likes.component.css']
+  
 })
 export class LikesComponent {
-  @Input('likesCount') likesCount: number;
-  @Input('isActive') isActive: boolean;
+  numberOfLikes: number = 0;
 
-  onClick() {
-    this.likesCount += (this.isActive) ? -1 : 1;
-    this.isActive = this.isActive;
+  likeButtonClick() {
+    this.numberOfLikes++;
   }
+
+  dislikeButtonClick() {
+    this.numberOfLikes--;
+  }
+
 }
